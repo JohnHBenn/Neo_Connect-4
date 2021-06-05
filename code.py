@@ -14,11 +14,12 @@ while True:
     for press in pressed:
         if press:
             x, y = press
-            trellis.pixels[x,y] = color
-            if color == red:
-                color = blue
-            elif color == blue:
-                color = red
+            if trellis.pixels[x,y] = (0,0,0):
+               trellis.pixels[x,y] = color
+               if color == red:
+                   color = blue
+               elif color == blue:
+                   color = red
         
     
     for i in range(8):
